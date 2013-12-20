@@ -87,15 +87,4 @@ public class JpaBookTest
       Assert.assertEquals((Long) 1l, firstBook.getId());
       Assert.assertEquals((Long) null, secondBook.getId());
    }
-   
-   @Test
-   public void testname() throws Exception {
-	   
-	   Book book = em.find(Book.class, 1);
-	   em.remove(book);
-	   
-	   em.getTransaction().commit();
-	   
-   }
-   
 }
